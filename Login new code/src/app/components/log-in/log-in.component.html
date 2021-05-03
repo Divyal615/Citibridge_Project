@@ -1,0 +1,92 @@
+<!-- <p>log-in works!</p> -->
+
+<!-- <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Log in</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" #loginform="ngForm" (ngSubmit)="doLogin()">
+      <small class="text-danger">{{ msg }}</small>
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            placeholder="Username"
+            [(ngModel)]="Username"
+            required
+            #Username="ngModel"
+          />
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            placeholder="Password"
+            [(ngModel)]="Password"
+            required
+            #Password="ngModel"
+          />
+        </mat-form-field>
+      </mat-card-content>
+      <button mat-stroked-button color="accent" class="btn-block">
+        Log in
+      </button>
+    </form>
+  </mat-card>
+</div> -->
+
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <!-- <div class="fadeIn first">
+      <img
+        src="http://danielzawadzki.com/codepen/01/icon.svg"
+        id="icon"
+        alt="User Icon"
+      /> 
+    </div> -->
+
+    <!-- Login Form -->
+    <form>
+      <input
+        type="text"
+        id="login"
+        class="fadeIn second"
+        name="login"
+        [(ngModel)]="username"
+        placeholder="login"
+      />
+      <input
+        type="text"
+        id="password"
+        class="fadeIn third"
+        name="login"
+        [(ngModel)]="password"
+        placeholder="password"
+      />
+      <input
+        type="submit"
+        class="fadeIn fourth"
+        value="Log In"
+        (click)="doLogin()"
+      />
+    </form>
+
+    <!-- Remind Passowrd
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div> -->
+  </div>
+</div>
