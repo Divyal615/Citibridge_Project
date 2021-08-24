@@ -1,0 +1,102 @@
+
+html,body {font-family:Arial, Helvetica, sans-serif;
+
+}
+.main{
+
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+
+
+
+}
+
+.click {
+    background-color:papayawhip;
+    color:black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    font-size: 17px;
+    width: 49%;
+    margin-right: 1%;
+}
+
+.click:hover {
+    background-color:brown;
+}
+
+/* Style the tab content */
+.tab {
+    color: black;
+    display: none;
+    padding: 200px;
+    text-align: center;
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+ input[type=text], input[type=password] {
+     padding: 10px 10px;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+
+     width: 70%;
+
+
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+form{
+     color :black;
+     background-color :papayawhip;
+}
+
+h1
+{
+   font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    color: Black;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+#stock {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border:1px solid;
+    width: 100%;
+}
+
+#stock td, #stock th {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+#stock tr:nth-child(even){background-color: gainsboro;}
+
+#stock tr:hover {background-color:brown;}
+
+#stock th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: papayawhip;
+    color: black;
+}
+

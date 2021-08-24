@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BSE/NSE Arbitrage Recommendation System</title>
+    <link rel="stylesheet" type="text/css" href="login.component.css" />
+    <script>
+      function buttonclick() {
+        var x = document.getElementById("div1");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function openCity(stockName) {
+        var i, tab, click;
+        tab = document.getElementsByClassName("tab");
+        for (i = 0; i < tab.length; i++) {
+          tab[i].style.display = "none";
+        }
+        click = document.getElementsByClassName("click");
+        for (i = 0; i < click.length; i++) {
+          click[i].className = click[i].className.replace(" active", "");
+        }
+        document.getElementById(stockName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <form>
+        <h1><I>BSE/NSE Arbitrage Recommendation System</I></h1>
+        <div class="input">
+          <label>Username </label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+        </div>
+        <div class="input">
+          <label>Password </label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+        </div>
+        <div class="input">
+          <button type="submit" onclick="buttonclick()"><b>Login</b></button>
+        </div>
+        <label> <input type="checkbox" /> Remember me </label>
+      </form>
+    </div>
+    <hr />
+    <div id="div1" style="display: none">
+      <button
+        class="click"
+        onclick="openCity('current', this)"
+        id="defaultOpen"
+      >
+        Current Stock
+      </button>
+      <button class="click" onclick="openCity('saved', this)">
+        Saved Stock
+      </button>
+      <div id="current" class="tab">
+        <table id="stock">
+          <tr>
+            <th>Time</th>
+            <th>Stock Name</th>
+            <th>Bought</th>
+            <th>Sold</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+      </div>
+      <div id="saved" class="tab">
+        <table id="stock">
+          <tr>
+            <th>Time</th>
+            <th>Stock Name</th>
+            <th>Bought</th>
+            <th>Sold</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </body>
+</html>
